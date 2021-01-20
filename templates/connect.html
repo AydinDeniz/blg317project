@@ -2,7 +2,7 @@
 {% block title %} Create Relation {%endblock title%}
 
 {% block content %}
-{% if session["id"] != 'Admin' %}
+{% if session["name"] != 'Admin' %}
 <h5>You must have Admin status to create relation.</h5>
 {% endif %}
 {% if session["id"] == 'Admin' %}
