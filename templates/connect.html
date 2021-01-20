@@ -5,7 +5,7 @@
 {% if session["name"] != 'Admin' %}
 <h5>You must have Admin status to create relation.</h5>
 {% endif %}
-{% if session["id"] == 'Admin' %}
+{% if session["name"] == 'Admin' %}
 <form method="post" id = "signlogin">
   <h3>Please select type 1 : </h3>
   <input type="radio" id="Hash" name="type1operation" value="Hash" checked="checked">
