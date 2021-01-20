@@ -26,7 +26,7 @@
         {% endfor %}
 </table>
 
-{% if session["status"]  == "Admin" %}
+{% if session["id"]  == "Admin" %}
 <form method="post" id = "buttons">
 
 <a href="/connect" class="button">Create Relation</a>

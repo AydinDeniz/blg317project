@@ -2,10 +2,10 @@
 {% block title %} Create Relation {%endblock title%}
 
 {% block content %}
-{% if session["status"] != 'Admin' %}
+{% if session["id"] != 'Admin' %}
 <h5>You must have Admin status to create relation.</h5>
 {% endif %}
-{% if session["status"] == 'Admin' %}
+{% if session["id"] == 'Admin' %}
 <form method="post" id = "signlogin">
   <h3>Please select type 1 : </h3>
   <input type="radio" id="Hash" name="type1operation" value="Hash" checked="checked">
