@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %} Add Modify IP Address {%endblock title%}
+
+{% block content %}
+
+{% if session["id"] == None %}
+<h5>In order to add/modify data you must login first.</h5>
+{% endif %}
+{% if session["id"] != None %}
+<form method="post" id = "signlogin">
+  <h3>Please select operation : </h3>
+  <input type="radio" id="Add" name="operation" value="Add" checked="checked">
+  <label for="Add">Add</label><br>
+  <input type="radio" id="Modify" name="operation" value="Modify">
+  <label for="Modify">Modify</label><br><br>
+  <label for="ipaddress">Ip Address:</label>
+  <input type="text" id="ipaddress" name="ipaddress">
+  <label for="country">Country:</label>
+  <input type="text" id="country" name="country">
+  <input type="submit" value="Confirm">
+</form>
+<h5>{{message}}</h5>
+{% endif %}
+
+{% endblock content %}
+

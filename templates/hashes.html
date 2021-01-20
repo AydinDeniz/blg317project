@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block title %} Hashes {%endblock title%}
+
+{% block content %}
+<form method="post" id = "buttons">
+
+<a href="/addmodifyhash" class="button">Add/Modify</a>
+<input type="submit" value="Search" style="float:right;width: 20%;">
+<input type="text" id="search" name="search" style="float:right;width: 20%;">
+
+</form>
+<table id="classic">
+  <tr>
+    <th>Hash</th>
+    <th>File Type</th>
+    <th>Related with</th>
+    <th>Reported by</th>
+    <th>Date Added</th>
+  </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[4]}}</td>
+            <td>{{row[3]}}</td>
+        </tr>
+        {% endfor %}
+</table>
+
+{% if session["status"]  == "Admin" %}
+
+
+<form method="post" id = "buttons">
+
+<a href="/connect" class="button">Create Relation</a>
+<input type="submit" value="DeleteQueryElement" style="float:right;width: 20%;background-color: #DB1F2A;">
+<input type="text" id="DeleteQueryElement" name="DeleteQueryElement" style="float:right;width: 20%;">
+
+</form>
+{% endif %}
+{% endblock content %}
+

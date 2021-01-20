@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %} Add Modify E-Mail {%endblock title%}
+
+{% block content %}
+
+{% if session["id"] == None %}
+<h5>In order to add/modify data you must login first.</h5>
+{% endif %}
+{% if session["id"] != None %}
+<form method="post" id = "signlogin">
+  <h3>Please select operation : </h3>
+  <input type="radio" id="Add" name="operation" value="Add" checked="checked">
+  <label for="Add">Add</label><br>
+  <input type="radio" id="Modify" name="operation" value="Modify">
+  <label for="Modify">Modify</label><br><br>
+  <label for="email">E-Mail:</label>
+  <input type="text" id="email" name="email">
+  <label for="type">Type:</label>
+  <input type="text" id="type" name="type">
+  <input type="submit" value="Confirm">
+</form>
+<h5>{{message}}</h5>
+{% endif %}
+
+{% endblock content %}

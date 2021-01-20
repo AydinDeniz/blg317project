@@ -1,0 +1,4 @@
+Flask>=1.1.2
+psycopg2==2.8.5
+gunicorn>=19.9
+psycopg2_binary==2.8.5

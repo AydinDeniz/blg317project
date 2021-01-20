@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %} Home {%endblock title%}
+
+{% block content %}
+
+<h1> THREAT BASE </h1>
+<p><b>What is Threat Base?</b></p>
+<p> Threat Base is an Threat Intelligence Sharing Platfrom where people can search for threat data information or can add threat data information themselves.</p>
+<p><b>What is Threat Data?</b></p>
+<p>Threat data is an amalgamation of malicious Hashes, IP addresses, URLs etc. It consists detected malicious agents which is used in previous Cyber Attacks. This Threat Data is used to prevent future Cyber Attacks.</p>
+<p><b>What is the purpose of this Website?</b></p>
+<p>By creating a website which allows people to contribute and search Threat Data, I aimed to improve Cyber Security of its users.</p>
+
+<h2><b>Current Data Information :</b></h2>
+<p>{{usercount}} Registered Users</p>
+<p>{{hashcount}} Malicious Hashes</p>
+<p>{{ipcount}} Malicious IP Addresses </p>
+<p>{{urlcount}} Malicious URLs </p>
+<p>{{emailcount}} Malicious E-Mails </p>
+
+{% endblock content %}

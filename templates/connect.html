@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %} Create Relation {%endblock title%}
+
+{% block content %}
+{% if session["status"] != 'Admin' %}
+<h5>You must have Admin status to create relation.</h5>
+{% endif %}
+{% if session["status"] == 'Admin' %}
+<form method="post" id = "signlogin">
+  <h3>Please select type 1 : </h3>
+  <input type="radio" id="Hash" name="type1operation" value="Hash" checked="checked">
+  <label for="Hash">Hash</label><br>
+  <input type="radio" id="URL" name="type1operation" value="URL">
+  <label for="URL">URL</label><br>
+  <input type="radio" id="E-Mail" name="type1operation" value="E-Mail">
+  <label for="E-Mail">E-Mail</label><br>
+  <h3>Please select type 2 : </h3>
+  <input type="radio" id="Hash" name="type2operation" value="Hash" checked="checked">
+  <label for="Hash">Hash</label><br>
+  <input type="radio" id="URL" name="type2operation" value="URL">
+  <label for="URL">URL</label><br>
+  <input type="radio" id="E-Mail" name="type2operation" value="E-Mail">
+  <label for="E-Mail">E-Mail</label><br><br>
+  
+  <label for="t1">TYPE 1:</label>
+  <input type="text" id="t1" name="t1">
+  <label for="type">TYPE 2:</label>
+  <input type="text" id="t2" name="t2">
+  <input type="submit" value="Confirm">
+</form>
+<h5>{{message}}</h5>
+{% endif %}
+
+{% endblock content %}

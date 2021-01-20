@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+p {
+	margin-left: 320px;
+	margin-right: 320px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+h2{
+	margin-left: 320px;
+	margin-right: 320px;
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+
+h1 {
+	text-align: center;
+	color: #03037f;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	font-size: 54px;
+}
+
+h5 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 120px;
+	margin-right: 120px;
+	font-size: 16px;
+}
+
+footer {
+	text-align: center;
+	margin-left: 320px;
+	margin-right: 320px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+
+}
+
+ a { text-decoration: none; text-align: center;}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.topnav-right {
+  float: right;
+}
+
+#classic {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 92%;
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 20px;
+}
+
+#classic td, #classic th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#classic tr:nth-child(even){background-color: #f2f2f2;}
+
+#classic tr:hover {background-color: #ddd;}
+
+#classic th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #23395d;
+  color: white;
+  
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+input[type=submit] {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+
+}
+
+form[id = signlogin] {
+margin-top: 20px;
+margin-left: 400px;
+margin-right: 400px;
+}
+
+form[id = buttons] {
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 20px;
+}
+
+.button {
+margin-top: 8px;
+  width: 15%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  display: inline-block;
+}
